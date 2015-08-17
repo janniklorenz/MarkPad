@@ -1,5 +1,3 @@
-/* public/script.js */
-
 window.onload = function() {
 	var converter = new showdown.Converter();
 	var pad = document.getElementById('pad');

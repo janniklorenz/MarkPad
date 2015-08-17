@@ -1,18 +1,12 @@
-doctype html
-html(lang="de")
-	head
-		title Realtime Markdown Viewer
-			
-		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css", rel="stylesheet")
-		link(href="/assets/css/style.css", rel="stylesheet")
-		
-	body(class="container-fluid")
-		section(class="row")
+extends ./layout.jade
+
+block main
+	section(class="row")
 			textarea(class="col-md-6 full-height" id="pad")
 			div(class="col-md-6 full-height" id="markdown")
 
-		script(src="https://cdn.rawgit.com/showdownjs/showdown/1.0.2/dist/showdown.min.js")
-		script(src="/channel/bcsocket.js")
-		script(src="/share/share.uncompressed.js")
-		script(src="/share/textarea.js")
-		script(src="/assets/js/script.js")
+	script(src="/assets/js/showdown.min.js")
+	script(src="/channel/bcsocket.js")
+	script(src="/share/share.uncompressed.js")
+	script(src="/share/textarea.js")
+	script(src="/assets/js/script.js")
