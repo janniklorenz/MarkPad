@@ -19,7 +19,9 @@
 		"redis": "^0.10.3",
 		"share": "0.6.3",
 		"less-middleware": "x",
-		"bootstrap": "x"
+		"bootstrap": "x",
+		"marked": "x",
+		"highlight.js": "x"
 	},
 	"engines": {
 		"node": "0.10.x",

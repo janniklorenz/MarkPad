@@ -31,6 +31,7 @@ Link | Description
 ## TODOs
 
 ### GUI
+- [x]Syntax highlighting
 - [ ]Menubar
 	- [ ]Current editing users
 		- [ ]Possible with sharejs?

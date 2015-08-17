@@ -1,5 +1,21 @@
 window.onload = function() {
-	var converter = new showdown.Converter();
+	marked.setOptions({
+		highlight: function (code) {
+			console.log(code)
+			console.log(hljs.highlightAuto(code).value)
+			return hljs.highlightAuto(code).value;
+		},
+		gfm: true,
+		tables: true,
+		breaks: false,
+		pedantic: false,
+		sanitize: true,
+		smartLists: true,
+		smartypants: false,
+	});
+
+
+
 	var pad = document.getElementById('pad');
 	var markdownArea = document.getElementById('markdown');
 
@@ -32,7 +48,12 @@ window.onload = function() {
 	var convertTextAreaToMarkdown = function(){
 		var markdownText = pad.value;
 		previousMarkdownValue = markdownText;
-		html = converter.makeHtml(markdownText);
+
+		html = marked(markdownText);
+
+		// html = converter.makeHtml(markdownText);
+
+
 		markdownArea.innerHTML = html;
 	};
 

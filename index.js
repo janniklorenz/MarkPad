@@ -14,6 +14,9 @@ app.set('view engine', 'jade');
 app.use("/assets/css/", lessMiddleware(__dirname + "/stylesheets"));
 app.use("/assets/css/", express.static(__dirname + "/stylesheets"));
 
+app.use("/assets/js/marked.min.js", express.static(__dirname + "/node_modules/marked/marked.min.js"));
+app.use("/assets/css/highlight/", express.static(__dirname + "/node_modules/highlight.js/styles/"));
+
 app.use("/assets/", express.static(__dirname + "/assets"));
 
 
