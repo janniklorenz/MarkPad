@@ -31,21 +31,21 @@ Link | Description
 ## TODOs
 
 ### GUI
-- [x]Syntax highlighting
-- [ ]Menubar
-	- [ ]Current editing users
-		- [ ]Possible with sharejs?
-	- [ ]Name
-	- [ ]etc.
-	- [ ]Download currend file add `name.md`
-- [ ]View only mode (Segmented control, with 3 states)
+- [x] Syntax highlighting
+- [ ] Menubar
+	- [ ] Current editing users
+		- [ ] Possible with sharejs?
+	- [ ] Name
+	- [ ] etc.
+	- [ ] Download currend file add `name.md`
+- [ ] View only mode (Segmented control, with 3 states)
 
 ### Core
-- [ ]Add support to multiple database types
-- [ ]Source Control
-- [ ]API
-	- [ ]Add new pad
-	- [ ]Edit content
+- [ ] Add support to multiple database types
+- [ ] Source Control
+- [ ] API
+	- [ ] Add new pad
+	- [ ] Edit content
 - [ ] /new: Generate uniqe name
 - [ ] Default MarkPad file
 

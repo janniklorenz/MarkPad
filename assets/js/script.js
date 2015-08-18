@@ -1,17 +1,15 @@
 window.onload = function() {
 	marked.setOptions({
 		highlight: function (code) {
-			console.log(code)
-			console.log(hljs.highlightAuto(code).value)
 			return hljs.highlightAuto(code).value;
 		},
 		gfm: true,
 		tables: true,
-		breaks: false,
+		breaks: true,
 		pedantic: false,
-		sanitize: true,
-		smartLists: true,
-		smartypants: false,
+		sanitize: false,
+		smartLists: false,
+		smartypants: true,
 	});
 
 
