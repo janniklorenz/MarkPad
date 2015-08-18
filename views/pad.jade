@@ -2,10 +2,13 @@ extends ./layout.jade
 
 block main
 	section(class="row")
-			textarea(class="col-md-6 full-height" id="pad")
-			div(class="col-md-6 full-height" id="markdown")
+		div(class="col-md-6 full-height" id="pad")
+		div(class="col-md-6 full-height" id="markdown")
 
+	script(src="./assets/ace/ace.js")
 	script(src="./channel/bcsocket.js")
 	script(src="./share/share.uncompressed.js")
+	script(src="./share/ace.js")
 	script(src="./share/textarea.js")
 	script(src="./assets/js/script.js")
+	

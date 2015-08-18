@@ -1,8 +1,36 @@
 @import "../node_modules/bootstrap/less/bootstrap.less";
 
+body {
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
 html, body, section, .full-height {
 	height: 100%;
 }
+
+
+.vertical-center {
+	min-height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.h-center {
+	display: flex;
+	justify-content: center;
+}
+.dark {
+	padding: 1%;
+	background-color: rgb(51, 51, 51);
+}
+
 
 #pad {
 	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
@@ -19,5 +47,6 @@ html, body, section, .full-height {
 
 #markdown {
 	overflow: auto;
-	border-left: 1px solid black;
+
+	color: black;
 }
