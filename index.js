@@ -24,6 +24,10 @@ app.use("/assets/", express.static(__dirname + "/assets"));
 app.get('/', function(req, res) {
 	res.render('index');
 });
+app.get('/new', function(req, res) {
+	// TODO: generate uniqe name
+	res.redirect('/');
+});
 app.get('/(:id)', function(req, res) {
 	res.render('pad');
 });

@@ -15,9 +15,9 @@ window.onload = function() {
 	});
 
 
-
 	var pad = document.getElementById('pad');
 	var markdownArea = document.getElementById('markdown');
+
 
 	// make the tab act like a tab
 	pad.addEventListener('keydown',function(e) {

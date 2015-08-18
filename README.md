@@ -46,8 +46,8 @@ Link | Description
 - [ ]API
 	- [ ]Add new pad
 	- [ ]Edit content
-
-
+- [ ] /new: Generate uniqe name
+- [ ] Default MarkPad file
 
 ## License
 The MIT License
