@@ -19,8 +19,8 @@ Type anything after the slash in "https://realtimemarkdown.herokuapp.com/" and j
 
 This website uses the following to work:
 
-Link | Description
---- | ---
+Link | Description
+--- | ---
 [Showdown](https://github.com/showdownjs/showdown) | Converts markdown text to beautiful HTML
 [ShareJS](http://sharejs.org/) | Allows for realtime editing of this textbox
 [Node.js](https://nodejs.org/) | Backend framework
