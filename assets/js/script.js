@@ -16,6 +16,13 @@ window.onload = function() {
 
 	var pad = ace.edit("pad");
 	pad.setTheme("ace/theme/solarized_dark");
+	pad.setReadOnly(true);
+
+	// var MarkdownMode = ace.require("ace/mode/markdown").Mode;
+	// var session = editor.getSession();
+	// session.setMode(new MarkdownMode());
+	// session.setTabSize(4);
+	// session.setUseSoftTabs(false);
 
 	var markdownArea = document.getElementById('markdown');
 
@@ -56,11 +63,23 @@ window.onload = function() {
 
 
 	// ignore if on home page
+	var doc = null;
 	if(document.location.pathname.length > 1){
 		// implement share js
 		var documentName = document.location.pathname.substring(1);
-		sharejs.open(documentName, 'text', function(error, doc) {
+		sharejs.open(documentName, 'text', function(error, newDoc) {
+
+			if (doc != null) {
+				doc.close();
+				doc.detach_ace();
+			}
+
+			doc = newDoc;
+
 			doc.attach_ace(pad);
+			pad.setReadOnly(false);
+
+
 			convertTextAreaToMarkdown();
 		});
 	}
