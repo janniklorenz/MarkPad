@@ -1,4 +1,4 @@
-# Realtime Markdown Editor
+# MarkPad
 
 
 ## What is this?
@@ -46,3 +46,8 @@ Link | Description
 - [ ]API
 	- [ ]Add new pad
 	- [ ]Edit content
+
+
+
+## License
+The MIT License
